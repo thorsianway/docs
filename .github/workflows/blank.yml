@@ -22,18 +22,18 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      # °²×°mkdocs
+      # å®‰è£…mkdocs
       - name: Install mkdocs
         run: python -m pip install mkdocs
         
-      # Éú³Éhtml
+      # ç”Ÿæˆhtml
       - name: build html
         run: mkdocs build
         
-      # ·¢²¼µ½Ö¸¶¨Ä¿Â¼
+      # å‘å¸ƒåˆ°æŒ‡å®šç›®å½•
       - name: Deploy
         user: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: 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
           publish_dir: ./site
 
